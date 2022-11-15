@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43b813cec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi I'm Student</p>
+            <h1>Hello,I'm <span>Manorin Nanthani</span><br>form Mattayomwat Nongkheam School</h1>
+        </div>
+    </div>
+
+</div> 
+<!---------about me------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"><u>About Me</u></h1>
+                <p>
+                    ชื่อ มโนรินทร์  นามสกุล  นันทะนิ
+                        ชื่อเล่น  : แม็ก
+                        เกิดวันที่ 05 พฤศจิกายน พ.ศ 2547 
+                        เชื้อชาติ ไทย สัญชาติ ไทย ศาสนา พุทธ กรุ๊ปเลือด B 
+                        ช่วงมัธยมตอนปลายผมเรียนสายการเรียนวิทย์คณิตครับผมเป็นคนที่ชอบเล่นกีฬาโดยเฉพาะกีฬา บาสเกตบอล ครับแล้วก็ชอบ วาดรูป ด้วยครับ
+                        ผมมีนิสัยสนุกเฮฮาและผมเป็นคนที่ถ้าสนใจอะไรแล้วผมมักจะจดจ่ออยู่กับสิ่งนั้นนั้นครับผม
+                        <br><u>ที่อยู่</u></br>
+                        10/1 บางบอน 5 ซอย 5 แขวง บางบอนเหนือน 
+                        เขต บางบอน จังหวัดกรุงเทพมหานคร ปณ 10150</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Ability Skill')">Ability Skill</p>
+                            <p class="tab-links" onclick="opentab('Academic results')">Academic results</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Ability Skill">
+                            <ul>
+                                <li><span>video editing</span><br>ของโปรแกรม camtasia studio และ Sony vagus pro</li>
+                                <li><span>photo montage</span><br>ของโปรแกรม photoshop</li>
+                                <li><span>coding</span><br>เป็นภาษา python HTML C# </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Academic results">
+                            <ul>
+                                <li><span>ช่วงมัธยมศึกษาปีที 4</span><br>ภาคเรียนที่ 1 ผมได้เกรดเฉลี่ย 2.79 
+                                    <br>ภาคเรียนที่ 2 ผมได้เกรดเฉลี่ย 3.31</li>
+                                <li><span>ช่วงมัธยมศึกษาปีที 5</span><br>ภาคเรียนที่ 1 ผมได้เกรดเฉลี่ย 3.95
+                                    <br>ภาคเรียนที่ 2 ผมได้เกรดเฉลี่ย 3.57</li>
+                                <li><span>ช่วงมัธยมศึกษาปีที 6</span><br>ภาคเรียนที่ 1 ผมได้เกรดเฉลี่ย 3.48</li>
+                                <li><span>รวม</span><br>GPX รวม <u>3.37</u></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul><div>
+                                <img src="images/janlogo.png">
+                            </div>
+                                <li><span>ระดับประถมศึกษา</span><br>โรงเรียนจันทศิริวิทยา
+                                    ป.1 -ป.6</li><div>
+                                        <img src="images/schoo.pngl.png">
+                                    </div>
+                                <li><span>ระดับมัธยมตอนต้น</span><br>โรงเรียนมัธยมวัดหนองแขม
+                                    ม.1 - ม.3</li><div>
+                                        <img src="images/schoo.pngl.png">
+                                    </div>
+                                <li><span>ระดับมัธยมตอนปลาย</span><br>โรงเรียนมัธยมวัดหนองแขม
+                                    ม.4 - ม.6
+                                    แผนการเรียน <span><u>วิทย์-คณิต</u></span></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><u>Services</u></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-trophy"></i>
+                <h2>Performance</h2>
+                <p>สิ่งนี้คือผลงานที่ผมเคยได้ทำและได้ออกแบบครับ</p>
+                <a href="performace.html"><u>Learn more</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-ranking-star"></i>
+                <h2>Activity</h2>
+                <p>สิ่งนี้คือกิจกรรมที่ผมได้เคยเข้าร่วมครับ</p>
+                <a href="activity.html"><u>Learn more</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scroll"></i>
+                <h2>Certificate</h2>
+                <p>สิ่งนี้คือใบเกียรติบัตรที่ผมได้เข้าร่วมกิจกรรมต่างๆครับ</p>
+                <a href="certificate.html"><u>Learn more</u></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><u>Contact Me</u></h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> std.nk37445@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 092-543-0076</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100011445914475"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mnr_ntn/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Manorin01/BasicPython"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my portfolio.pdf.pdf"  download class="btn btn2">Dowload My Portfolio</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <li>Your Name</li>
+                    <input type="text"name="Name" placehoder="Your Name" required>
+                    <li>Your Email</li>
+                    <input type="email" name="email" placehoder="Your Email" required>
+                    <li>Your Message</li>
+                    <textarea name="Message" rows="6" placehoder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright : This is my Web portfolio with <i class="fa-solid fa-face-smile-beam"></i> Manorin </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+       
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>

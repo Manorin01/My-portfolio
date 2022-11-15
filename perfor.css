@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #adadad;
+    color: #ffffff;
+}
+.container{
+    padding: 5px 2%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px;
+}
+.down{
+    margin: 50px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #1888CF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.about-col-1{
+    flex-basis: 60%;
+    font-size: 20px;
+}
+.sub-title{
+    padding: 40px 40%;
+    font-size: 60px;
+    font-weight: 600;
+    color: #2b79aa;
+    
+}
+.sub-title h1{
+    position: center;
+}
+.snake{
+    flex-basis: 35%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #1888CF;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transform: background 0.5s;
+    display: inline-block;
+    background: #1888CF;
+    font-size: 27px;
+}
+
+.btn:hover{
+    background: #1888CF;
+}
+
+.photo img{
+    margin: 0px 650px auto;
+    width: 30%;
+    padding: 0 10px 0 0;
+    border-radius: 20px;
+    
+}
+.text-box{
+    flex-basis: 40%;
+    font-size: 28px;
+    margin: 20px;
+}
+.text-box span{
+    color: #d86558;
+}
+/*------------------- css for small screens-------- */
+nav .fas{
+    display: none;
+
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/ui\ moblie.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #2b79aa;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .text-box{
+        font-size: 40px;
+    }
+    .photo img{
+        flex-basis: 100%;
+    }
+    .photo img{
+        margin-bottom: 30px;
+    }
+    .photo img{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
