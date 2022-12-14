@@ -33,7 +33,7 @@ nav{
 }
 
 .logo{
-    width: 200px;
+    width: 150px;
 }
 
 nav ul li{
@@ -205,9 +205,17 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #1f1f1f;
+    color: #ffffff;
     transform: background 0.5s;
 }
+/* -------------thank----------- */
+.thank{
+    text-align: right;
+    position: absolute;
+    width: 75%;
+
+}
+
 
 .btn:hover{
     background: #1888CF;
@@ -348,9 +356,9 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
-}
-#msg{
-    color: #345f2c;
-    margin-top: -40px;
-    display: block;
+    .thank{
+        position: inherit;
+        margin: 20px;
+        
+    }
 }
